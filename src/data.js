@@ -48,3 +48,9 @@ export function QueryNavLink({ to, ...props }) {
   let location = useLocation();
   return <NavLink to={to + location.search} {...props} />;
 }
+
+export function deleteInvoice(number) {
+  invoices = invoices.filter(
+    (invoice) => invoice.number !== number
+  )
+}
