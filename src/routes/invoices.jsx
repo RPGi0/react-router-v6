@@ -19,7 +19,7 @@ export default function Invoices() {
         }}
       >
         <input 
-          value={setSearchParams.get("filter") || ""}
+          value={searchParams.get("filter") || ""}
           onChange={(event) => {
             let filter = event.target.value;
             if (filter) {
